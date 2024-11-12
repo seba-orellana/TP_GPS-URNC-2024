@@ -4,7 +4,7 @@ import folium
 Latitude = []
 Longitude = []
 
-with open('TP_GPS-URNC-2024\gps_2024.txt') as file:
+with open('gps12_11_24_2.txt') as file:
     for line in file:
         if line.startswith('$GPGGA'): 
 
@@ -32,4 +32,4 @@ mymap = folium.Map( location=[ df.Latitude.mean(), df.Longitude.mean() ], zoom_s
 for coord in df[['Latitude','Longitude']].values:
     folium.CircleMarker(location=[coord[0],coord[1]], radius=1,color='red').add_to(mymap)
 
-mymap.save('gps_unrc.html') 
+mymap.save('gps_unrc121124_a.html') 
