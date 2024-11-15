@@ -9,3 +9,7 @@ Dependencias:
 `pip install pandas`
 
 `pip install folium` 
+
+`pip install geopy` 
+
+`pip install branca` 
